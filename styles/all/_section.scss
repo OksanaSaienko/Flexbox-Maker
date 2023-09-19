@@ -1,0 +1,148 @@
+$black: #000000;
+$pink: #FF6336;
+$white: #FFFFFF;
+
+$container-widht: 1330px;
+$container-padding: 15px;
+
+// $font-type-woff: ".woff";
+// $font-type-woff2: ".woff2";
+// $font-weight-400: "GraphikLCG-Regular";
+// $font-weight-500: "GraphikLCG-Semibold";
+
+.container {
+    max-width: calc($container-widht + ($container-padding) * 2);
+    width: 100%;
+    padding: 0 $container-padding;
+    margin: 0 auto;
+
+}
+
+body {
+    font-family: 'GraphikLCG', sans-serif;
+}
+
+.text-header-1 {
+    color: $black;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    /* 133.333% */
+
+}
+
+// .text-dark {}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-pink {
+    background-color: $pink;
+}
+
+// Flex
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-colomn {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-colomn {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.button_white {
+    color: $black;
+    text-align: center;
+    font-family: Graphik LC TT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    /* 281.25% */
+
+    border: rgba(0, 0, 0, 0.5);
+}
+
+
+.button {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 45px;
+    /* 281.25% */
+    cursor: pointer;
+
+    &-header-white {
+        width: 120px;
+        height: 45px;
+        color: $black;
+        // border: 1px solid $black(0, 0, 0, 0.50);
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        background: $white;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+
+    &-header-pink {
+        width: 120px;
+        height: 45px;
+        color: $white;
+        border: none;
+        background: $pink;
+
+        &:hover {
+            color: $white;
+        }
+
+    }
+
+}
